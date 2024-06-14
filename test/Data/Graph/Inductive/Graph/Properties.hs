@@ -18,7 +18,10 @@ import Data.Graph.Inductive.Proxy
 
 import Test.QuickCheck
 
+#if __GLASGOW_HASKELL__ < 908
 import           Control.Applicative (liftA2)
+#endif
+
 import           Control.Arrow       ((***))
 import           Data.Function       (on)
 import           Data.List           (groupBy, sort, sortBy)

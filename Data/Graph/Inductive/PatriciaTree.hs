@@ -27,7 +27,10 @@ module Data.Graph.Inductive.PatriciaTree
 
 import Data.Graph.Inductive.Graph
 
+#if __GLASGOW_HASKELL__ < 908
 import           Control.Applicative (liftA2)
+#endif
+
 import           Data.IntMap         (IntMap)
 import qualified Data.IntMap         as IM
 import           Data.List           (foldl', sort)

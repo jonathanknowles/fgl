@@ -13,7 +13,10 @@ module Data.Graph.Inductive.Tree (Gr,UGr) where
 
 import Data.Graph.Inductive.Graph
 
+#if __GLASGOW_HASKELL__ < 901
 import           Control.Applicative (liftA2)
+#endif
+
 import           Data.List           (foldl', sort)
 import           Data.Map            (Map)
 import qualified Data.Map            as M
