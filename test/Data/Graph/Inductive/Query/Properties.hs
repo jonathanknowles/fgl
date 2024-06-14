@@ -34,8 +34,6 @@ import qualified Data.Set      as S
 import Control.Applicative ((<*>))
 #endif
 
-{-# ANN module "HLint: ignore Use camelCase" #-}
-
 -- -----------------------------------------------------------------------------
 -- Articulation Points
 

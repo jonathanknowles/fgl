@@ -31,8 +31,6 @@ import qualified Data.Set            as S
 import Data.Functor ((<$>))
 #endif
 
-{-# ANN module "HLint: ignore Use camelCase" #-}
-
 -- -----------------------------------------------------------------------------
 -- Non-dynamic graphs
 
